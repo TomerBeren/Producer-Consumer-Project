@@ -1,22 +1,24 @@
-#ifndef BOUNDEDBUFFER_H
-#define BOUNDEDBUFFER_H
+#ifndef BOUNDEDBUFFER_HPP
+#define BOUNDEDBUFFER_HPP
 
+#include <mutex>
 #include <queue>
 #include <string>
-#include <mutex>
-#include <condition_variable>
+#include <semaphore.h>
 
 class BoundedBuffer {
 public:
     BoundedBuffer(int size);
+    ~BoundedBuffer();
     void insert(const std::string& item);
     std::string remove();
 
 private:
-    std::queue<std::string> buffer;
     int maxSize;
+    std::queue<std::string> buffer;
     std::mutex mtx;
-    std::condition_variable cond;
+    sem_t emptySlots;
+    sem_t fullSlots;
 };
 
-#endif // BOUNDEDBUFFER_H
+#endif // BOUNDEDBUFFER_HPP
