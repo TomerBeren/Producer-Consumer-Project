@@ -1,0 +1,23 @@
+# Ignore object files
+*.o
+
+# Ignore executables
+*.exe
+*.out
+*.app
+
+# Ignore VSCode directory
+.vscode/
+
+# Ignore text files
+*.txt
+
+# Ignore any other temporary files or directories
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignore build directories
+build/
+bin/
