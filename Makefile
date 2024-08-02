@@ -5,7 +5,7 @@ CXX = g++
 CXXFLAGS = -std=c++11 -pthread -Iinclude
 
 # Executable name
-TARGET = ex3.out
+TARGET = ProdCons
 
 # Source files
 SRCS = src/main.cpp src/BoundedBuffer.cpp src/Producer.cpp src/Dispatcher.cpp src/CoEditor.cpp src/ScreenManager.cpp

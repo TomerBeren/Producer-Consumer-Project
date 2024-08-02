@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run the program and capture the output in a variable
-output=$(./ex3.out config.txt)
+output=$(../ProdCons config1)
 
 # Print the program output
 echo "Program Output:"
