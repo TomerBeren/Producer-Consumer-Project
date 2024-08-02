@@ -10,13 +10,10 @@ This project is a simulation of a news broadcasting system implemented using con
 - [Compilation and Execution](#compilation-and-execution)
 - [Running the Tests](#running-the-tests)
   - [Output Files](#output-files)
-- [Project Structure](#project-structure)
-- [Example Makefile](#example-makefile)
-- [Python Test Script (run_tests.py)](#python-test-script-runtestspy)
 
 ## General Description
 
-This project simulates a news broadcasting system where different types of stories (SPORTS, NEWS, WEATHER) are produced, sorted, processed, and displayed. The system is designed to help understand the performance impact of various synchronization constructs under different loads.
+This project features a simulation of a news broadcasting system. Different types of stories (SPORTS, NEWS, WEATHER) are generated, sorted, processed, and displayed in real-time. The implementation showcases the performance impact of various synchronization constructs under different workloads, highlighting the challenges and solutions in concurrent programming.
 
 ## System Design
 
