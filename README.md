@@ -150,7 +150,7 @@ The tests are located in the `Tests` folder and include 4 configuration files, a
    chmod +x message_count_tester.sh
    ./message_count_tester.sh
    ```   
-4. **Running the Python Test Script:**:
+4. **Running the Python Test Script**:
    The Python script automates the testing process and checks the program's behavior under various configurations.
    ```sh
    python3 prodcons_tester.py
